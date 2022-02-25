@@ -1,0 +1,543 @@
+@charset "utf-8";
+@font-face {
+font-family: 'establishRoomNo703OTF';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRoomNo703OTF.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+h1{
+
+
+}
+body{font-size:14px;
+min-width:1350px;
+background-image: url(images/bak.png);}
+/*기본구조끝*/
+*{
+margin:0;
+padding:0;
+}
+a{
+text-decoration:none;
+color:#222;
+}
+ul, ol{
+list-style:none;
+}
+/*기본구조끝*/
+/*header*/
+#header_inner{
+    width:1320px;
+    margin: 0 auto;
+
+  }
+
+
+
+
+
+
+
+  #header{
+    background-image: none;
+    background-image: url(images/bak.png);
+    height:101px;
+  }
+  
+  #logo{
+    float:left;
+    padding-top:15.5px;
+  }
+
+#logo>a{
+  display: block;
+    width: 260px;
+    height: 70px;
+    background: url(images/park.png) no-repeat center top;
+}
+
+
+  #logo>a:hover{
+      background-image: url(images/p22.png);
+      transition: all 1s;
+  }
+
+
+#gnb{
+	float:right;
+	text-align:center;
+  font-family:'establishRoomNo703OTF';
+}	
+#gnb>li{float:left;
+		width:220px;}
+#gnb>li>a{display:block;
+		font-size:30px;
+		padding:35px 0 0;
+  color: #fff;}
+#gnb>li>a:hover{color:rgb(255, 166, 0);}
+.solid{width:50%;
+		margin:auto;
+		margin-top:20px;
+		height:5px;
+		background:rgb(255, 166, 0);
+		visibility:hidden;
+		opacity:0;
+		transform:scaleX(0);
+		transition-property:opacity, transform;
+		transition-duration:0.5s;}
+#gnb>li>a:hover .solid{transform:scaleX(1);
+						opacity:1;
+						visibility:visible;}
+
+
+            /*메인베너*/
+
+
+            /*화살표 색상 변경*/
+    .mb .swiper-button-next {
+      color: rgb(255, 196, 0);
+    }
+
+    .mb .swiper-button-prev {
+      color: rgb(255, 196, 0);
+    }
+
+    /*불릿, pagination색상 변경*/
+    .mb .swiper-pagination-bullet {
+      background:rgb(255, 196, 0);
+    }
+
+    .mb .swiper-slide img {
+      width: 100%;
+    }
+
+    .sub {
+      width: 1320px;
+      margin: 50px auto;
+    }
+
+    /*--빡소포차 소개*/
+.thumntext{
+  width:1320px;
+    margin: 0 auto;
+    height: 380px;
+    padding: 100px 0;
+}
+#humntext-1{
+  float:left;
+width: 380px;
+height: 380px;
+}
+.thumntext_textArea{
+  float:left;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  width: 560px;
+  height: 380px;
+  margin-top: 50px;
+}
+
+.a1{
+  font-size: 68px;
+  font-weight: bold;
+  padding: 3px 0 10px 0;
+  display: inline-block;
+}
+
+.a1-1{
+  padding: 30px 0;
+  line-height: 10px;
+  font-size: 18px;
+  line-height: 200%;
+  display: inline-block;
+  height: 30px;
+}
+
+
+
+
+.b1{
+  padding:0;
+  font-size: 20px;
+}
+
+
+#humntext-2{
+float: right;
+width: 380px;
+height: 380px;
+}
+
+
+
+
+/*포차메뉴시작*/
+
+
+.sub {
+  width: 1580px;
+  margin: 0px auto;
+  position: relative;
+}
+
+.sub .swiper-wrapper{
+  align-items: center;
+  
+}
+
+.sub .swiper-slide-active .img2{display: block;}
+.img2{display: none;}
+.sub .swiper-slide-active .img1{
+  display: none;
+}
+
+.sub .swiper-slide{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  
+}
+.sub .swiper-slide-active{z-index: 10;
+
+}
+
+/*화살표 이동하기*/
+.sub .swiper-button-prev {
+    left: 603px;
+    right: auto;
+    color: #fff;
+}
+
+.sub .swiper-button-next {
+    right: 603px;
+    left: auto;
+    color: #fff;
+    
+}
+
+
+
+/*이미지로 변경할경우! 주석문해제해서 맞게 변경해서 쓰세요!
+.sub .swiper-button_next:after{content:url(이미지경로);}
+.sub .swiper-button_prev:after{content:url(이미지경로);}
+*/
+
+#meun{
+  background-image: url(images/chsajr1.png);
+  background-repeat:no-repeat;
+  width: 100%;
+  height: 1032px;
+  margin: 0 auto;
+  padding-top: 443px;
+  box-sizing: border-box;
+  background-position: center top;
+}
+
+/*버튼만들기*/
+
+#btn{
+  padding-top: 22px;
+}
+
+.btn1 {
+  display: block;
+  background-color: rgba(255, 255, 255, 0);
+  width: 150px;
+  padding: 10px 0;
+  /*세로로 가운데 맞춤*/
+  text-align: center;
+  /*가로 가운데 맞춤*/
+  margin: 10px auto;
+  border: rgb(255, 0, 0) 2px solid;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+/*신메뉴*/
+/*insta*/
+#insta{
+  width:1286px;
+  margin:0 auto;
+  
+}
+#insta ul li{float:left;
+}
+
+#insta h2{
+  padding:80px 0;
+  text-align:center;
+}
+
+#insta ul .n1{
+  display: block;
+    width: 314px;
+    height:347px;
+    background: url(images/N1.png) no-repeat center top;
+    margin-left: 7px;
+}
+
+#insta ul .n1:hover {
+  background-image: url(images/N1-1.png);
+  transition: all 0.5s;
+}
+
+#insta ul .n2{
+  display: block;
+    width: 314px;
+    height:347px;
+    background: url(images/N2.png) no-repeat center top;
+    margin-left: 7px;
+}
+
+#insta ul .n2:hover {
+  background-image: url(images/N2-1.png);
+  transition: all 1s;
+}
+
+#insta ul .n3{
+  display: block;
+    width: 314px;
+    height:347px;
+    background: url(images/N3.png) no-repeat center top;
+    margin-left: 7px;
+}
+
+#insta ul .n3:hover {
+  background-image: url(images/N3-1.png);
+  transition: all 1s;
+}
+
+#insta ul .n4{
+  display: block;
+    width: 314px;
+    height:347px;
+    background: url(images/N4.png) no-repeat center top;
+    margin-left: 7px;
+}
+
+#insta ul .n4:hover {
+  background-image: url(images/N4-1.png);
+  transition: all 1s;
+}
+
+
+#insta ul{
+  height:288px;
+  padding-bottom:100px;
+}
+h2{
+  color: rgb(255, 136, 0);
+  font-size: 80px;
+}
+
+/*매장안내 시작*/
+h3{
+  color: rgb(199, 19, 19);
+  font-size: 80px;
+  margin: 0 auto;
+  width: 400px;
+  padding: 150px 0 100px 0;
+  text-align: center;
+}
+#store{
+  width: 1320px;
+  margin: 0 auto;
+}
+
+
+#store ul{
+  padding-left: 23px;
+  height: 436px;
+
+}
+
+
+
+
+#store ul .in-2{float:left;
+width: 637px;
+height: 436px;
+overflow: hidden;
+}
+
+#store ul .in-4{float:left;
+  width: 637px;
+height: 437px;
+overflow: hidden;
+}
+
+/*이벤트*/
+
+.Event1{
+  color: rgb(255, 230, 0);
+  font-size: 80px;
+  margin: 0 auto;
+  width: 400px;
+  padding: 150px 0 100px 0;
+  text-align: center;
+}
+
+
+
+
+.Event .swiper-button-next {
+  color: rgb(255, 0, 0);
+}
+
+.Event .swiper-button-prev {
+  color: rgb(255, 0, 0);
+}
+
+/*불릿, pagination색상 변경*/
+.Event .swiper-pagination-bullet {
+  background:rgb(255, 0, 0);
+}
+
+.Event .swiper-slide img {
+  width: 100%;
+}
+
+.Event {
+  width: 1320px;
+  margin: 50px auto;
+}
+
+
+/*방역수칙시작*/
+#rule{
+  width: 1320px;
+  margin: 50px auto;
+  padding: 100px 0;
+  height: 549px;
+}
+.rule1{
+  background-image: url(images/Untitled-4.png);
+  background-image: no-repeat;
+  width: 617px;
+  height: 549px;
+  float: left;
+  
+}
+.rule2{
+  background-image: url(images/Untitled-3.png);
+  background-image: no-repeat;
+  width: 617px;
+  height: 549px;
+  float: right;
+  margin-left: 30px;
+}
+.rule2 .rule2_in{
+font-size: 50px;
+font-weight: bold;
+color: #fff
+}
+.rule2_p{
+  text-align: center;
+    padding-top: 471px;
+}
+
+/*footer*/
+#footer_inner{
+  width:1320px;
+  margin:0 auto;
+  padding: 35px 0;
+  overflow:hidden;
+  color: rgb(255, 255, 255);
+}
+
+.f_logo{
+  float:left;
+}
+
+#footer_inner #footer_1{
+  float:right;
+  text-align:right;
+}
+
+#footer{
+  background:#333;
+  padding:10px 0;
+  height: 252px;
+}
+#footer_inner p{
+margin: 100px 0 0px 0;
+color: rgb(255, 255, 255);
+font-weight: bold;
+
+}
+
+.sns ul li{
+  float:left;
+  padding-left:5px;
+  opacity:0.5;
+}
+
+.sns ul li:hover{
+  opacity:1;
+  transition:all 0.5s;
+}
+
+.sns{
+  float:right;
+  margin: -25px 8px -25px 0;
+}
+.copyright ul li{
+  float:left;
+  padding-right:15px;
+}
+.copyright{
+  float:right;
+  margin: -74px 0;
+}
+
+.copyright ul li a{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.copyright ul li .copyright1{
+  color: rgb(255, 214, 31);
+}
+
+
+/*fixed_btn*/
+.fixed_btn a{
+  display:inline-block;
+  color:rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 20PX;
+  margin: 0 auto;
+  background-image: url(images/TOP222222.png);
+  background-repeat:no-repeat;
+  width: 84PX;
+  height: 64PX;
+  text-align: center;
+  padding-top: 31px;
+  box-sizing: border-box;
+}
+
+.fixed_btn{
+  position:fixed;
+  right:73px;
+  bottom:26px;
+}
+.fixed_btn a:hover{
+  background-image: url(images/TOP.png);
+      transition: all 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
